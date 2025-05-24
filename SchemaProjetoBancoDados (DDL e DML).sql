@@ -1,3 +1,15 @@
+📘 DDL (Data Definition Language – Linguagem de Definição de Dados)
+Usado para criar, alterar ou excluir estruturas do banco de dados, como bancos, tabelas, índices etc.
+
+Exemplos de comandos DDL:
+CREATE DATABASE nome;
+
+CREATE TABLE nome_tabela (...);
+
+ALTER TABLE nome_tabela ...;
+
+DROP TABLE nome_tabela;
+
 -- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -302,9 +314,24 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 
 
-Data Manipulation Language (DML) INSERT
+📘 DML (Data Manipulation Language – Linguagem de Manipulação de Dados)
+Usado para inserir, consultar, atualizar e deletar dados nas tabelas.
+
+Exemplos de comandos DML:
+
+INSERT INTO nome_tabela VALUES ...;
+
+SELECT * FROM nome_tabela;
+
+UPDATE nome_tabela SET ... WHERE ...;
+
+DELETE FROM nome_tabela WHERE ...;
+
+
+***INSERT para popular tabelas***
+  
 -- Use o seu schema
-USE 'projetoBancoDados-MySQL';
+USE 'projetobancodados-mysql_github';
 
 -- 1. Popular a tabela 'status'
 INSERT INTO status (id_status, nome_status, descricao_status) VALUES
