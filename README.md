@@ -42,6 +42,9 @@ O sistema é composto pelas seguintes tabelas principais:
 * Exemplos de operações DML (INSERT, UPDATE, DELETE).
 * Exemplo de DTL (Transaction Control) para garantir a integridade em operações complexas.
 * Exemplo de DCL (Data Control Language) para gerenciamento de usuários e permissões.
+* Implementação de Triggers para automação do estoque:
+    * Atualização automática do `estoque_atual` da tabela `peca` após a inserção de novos itens na tabela `item_venda`.
+    * Reajuste automático do `estoque_atual` da tabela `peca` após a exclusão ou alteração de quantidade de itens na tabela `item_venda`.
 
 ## 📊 Consultas SQL Incluídas
 
@@ -63,6 +66,7 @@ O arquivo `Queries.sql` contém exemplos de consultas SQL, incluindo:
 * `Schema.sql` → Criação do schema e de todas as tabelas, índices e chaves estrangeiras.
 * `Iinitial_data.sql` → Inserção de dados de exemplo para popular o banco de dados.
 * `Queries.sql` → Consultas SQL de análise e exemplos de DML/DTL/DCL.
+* `Triggers.sql` → Definição das triggers para automação do controle de estoque.
 * `Diagrama Projeto Vendas Auto Peças.png` → Modelo visual (DER) do banco de dados.
 * `README.md` → Arquivo da descrição do projeto.
 
