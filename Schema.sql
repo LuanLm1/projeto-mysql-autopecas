@@ -303,8 +303,11 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 
 Data Manipulation Language (DML) INSERT
+***INSERT para popular tabelas***
+
+  
 -- Use o seu schema
-USE 'projetoBancoDados-MySQL';
+USE projetobancodados-mysql_github;
 
 -- 1. Popular a tabela 'status'
 INSERT INTO status (id_status, nome_status, descricao_status) VALUES
@@ -324,7 +327,7 @@ INSERT INTO veiculo (id_veiculo, marca, modelo, ano_modelo_inicio, ano_modelo_fi
 
 -- 3. Popular a tabela 'peca'
 INSERT INTO peca (codigo_peca, nome_peca, descricao, unidade_medida, preco_custo_padrao, preco_venda_sugerido, estoque_atual, estoque_minimo, estoque_maximo, localizacao_estoque, data_ultima_entrada, data_ultima_saida) VALUES
-('21102-RJA-001', 'Filtro de Óleo', 'Filtro de óleo original Honda para diversos modelos.', 'UNIDADE', 35.50, 69.90, 150, 50, 300, 'A1-01', '2025-05-10', '2025-05-20'),
+('21102-RJA-001', 'Filtro de Óleo', 'Filtro de óleo original Honda para diversos modelos.', 'UNIDADE', 35.50, 69.90, 150, 40, 300, 'A1-01', '2025-05-10', '2025-05-20'),
 ('51601-TBA-A01', 'Amortecedor Dianteiro', 'Amortecedor dianteiro esquerdo para Civic 10ª Geração.', 'UNIDADE', 220.00, 450.00, 30, 10, 80, 'B2-05', '2025-04-20', '2025-05-15'),
 ('45022-TBA-A00', 'Pastilha Freio Dianteiro', 'Conjunto de pastilhas de freio dianteiras.', 'CONJUNTO', 80.00, 180.00, 100, 30, 200, 'C3-10', '2025-05-01', '2025-05-22'),
 ('17220-5R0-008', 'Filtro de Ar do Motor', 'Filtro de ar para Honda Fit e HR-V.', 'UNIDADE', 45.00, 95.00, 80, 20, 150, 'A1-02', '2025-05-12', '2025-05-18');
