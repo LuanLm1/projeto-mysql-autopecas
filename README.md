@@ -31,7 +31,7 @@ O sistema é composto pelas seguintes tabelas principais:
 * Uma `venda` e um `pedido_compra` possuem um `status`.
 * Um `pedido_compra` contém vários `item_pedido_compra`.
 * Uma `venda` contém vários `item_venda`.
-* Uma `peca` pode estar em vários `item_venda`s e `item_pedido_compra`.
+* Uma `peca` pode estar em vários `item_venda` e `item_pedido_compra`.
 * Uma `peca` pode ser compatível com vários `veiculo`, e um `veiculo` pode ser compatível com várias `peca`, gerenciado por `peca_veiculo_compativel`.
 
 ## ⚙️ Funcionalidades Implementadas
